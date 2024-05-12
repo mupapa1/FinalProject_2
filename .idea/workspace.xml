@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aa1b36f-9295-4eb9-b313-50fed896176e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Final Project 2nd Portion CSII.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/candidate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vote_gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vote_tracker.py" afterDir="false" />
+    <list default="true" id="7aa1b36f-9295-4eb9-b313-50fed896176e" name="Changes" comment="Adding recorded votes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidate.py" beforeDir="false" afterPath="$PROJECT_DIR$/candidate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/votes.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fvAYYdjHmsbMVm1eVgYk95RjIk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +37,7 @@
   "keyToString": {
     "Python.RPS_gui.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.vote_gui.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -65,6 +59,28 @@
       <option name="presentableId" value="Default" />
       <updated>1714671226026</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding files">
+      <option name="closed" value="true" />
+      <created>1715476546613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715476546613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding recorded votes">
+      <option name="closed" value="true" />
+      <created>1715476601888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715476601888</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding files" />
+    <MESSAGE value="Adding recorded votes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding recorded votes" />
   </component>
 </project>

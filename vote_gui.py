@@ -4,6 +4,7 @@ from vote_tracker import VoteTracker
 
 class VoteGUI:
     def __init__(self, root):
+        """Initialize the VoteGUI."""
         self.root = root
         self.root.title("Vote Counter")
         self.root.geometry("400x300")
@@ -14,6 +15,7 @@ class VoteGUI:
         self.vote_menu()
 
     def vote_menu(self):
+        """Display the vote menu."""
         self.clear_frame()
         tk.Label(self.root, text="VOTE MENU").pack()
         tk.Label(self.root, text="v: Vote\nx: Exit").pack()
@@ -26,6 +28,7 @@ class VoteGUI:
         submit_button.pack()
 
     def process_vote(self, option):
+        """Process the vote option."""
         if option == "v":
             voter_id = self.get_voter_id()
             if voter_id:
@@ -36,6 +39,7 @@ class VoteGUI:
             messagebox.showerror("Error", "Invalid option. Please enter 'v' to vote or 'x' to exit.", icon="error")
 
     def candidate_menu(self, voter_id):
+        """Display the candidate menu."""
         self.clear_frame()
         tk.Label(self.root, text="CANDIDATE MENU").pack()
 
@@ -50,6 +54,7 @@ class VoteGUI:
         submit_button.pack()
 
     def process_candidate_vote(self, voter_id, candidate_index):
+        """Process the candidate vote."""
         if candidate_index == 0:
             messagebox.showerror("Error", "Please select a candidate.", icon="error")
         else:
@@ -61,17 +66,20 @@ class VoteGUI:
                 messagebox.showerror("Error", str(e), icon="error")
 
     def get_voter_id(self):
+        """Get the voter ID."""
         voter_id = simpledialog.askstring("Voter ID", "Enter your unique identifier (5-digit number):")
         while voter_id is not None and (not voter_id.isdigit() or len(voter_id) != 5):
             voter_id = simpledialog.askstring("Voter ID", "Invalid identifier. Please enter a 5-digit number:")
         return voter_id
 
     def show_results(self):
+        """Display the voting results."""
         self.clear_frame()
         results = self.vote_tracker.get_results()
         tk.Label(self.root, text="RESULTS").pack()
         tk.Label(self.root, text=results).pack()
 
     def clear_frame(self):
+        """Clear the frame."""
         for widget in self.root.winfo_children():
             widget.destroy()
